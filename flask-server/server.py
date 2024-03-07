@@ -149,6 +149,7 @@ def return_user_email():
 
 if __name__ == "__main__":
     # added host to test, it seems to make it work on android
-   app.run(debug=True,  port=5100, host='0.0.0.0')
+   #app.run(debug=True,  port=5100, host='0.0.0.0')
+    app.run()
     
     # app.run(debug=True,  port=5100)
