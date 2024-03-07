@@ -15,7 +15,8 @@ class DBConnection:
     self.db = os.getenv("DATABASE")
     self.autocommit = True
     self.ssl_verify_identity = True
-    self.ssl_ca = '/etc/ssl/cert.pem'
+    self.ssl_ca = os.getenv("SSL_CA")
+    # self.ssl_ca = '/etc/ssl/cert.pem'
 
 
   # can use notation of "with DBConnection() as db_conn:". acts similar to opening a file with "with"
